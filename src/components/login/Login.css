@@ -1,0 +1,152 @@
+@media (max-width: 767px) {
+  body{
+  background-image: url(/src/images/sexy11.jpeg);
+
+ }
+.dan-login{
+  
+}
+.main{
+  background-image: url(/src/images/sexy11.jpeg);
+  height: 40vh;
+  padding:20px;
+}
+.header-title{
+  font-size: 30px;
+  color: aqua;
+  font-family: cursive;
+}
+.middle-section{
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: rgb(218, 253, 253);
+  margin-top: 3rem;
+}
+.form-dan{
+background-image: url(/src/images/sexy12.jpeg); 
+  height: 60vh;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5%;
+}
+.form-action{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.form-control{
+  height:50px ;
+  width: 100%;
+  outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+.form-control, .span{
+  color: green;
+}
+.icon-m{
+  font-size: 20px;
+  color: brown;
+}
+.small{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-top: 8px;
+  
+}
+.smalls{
+  display: flex;
+  font-size: 21px;
+  color: black;
+}
+.smallest{
+  font-size: 13px;
+  color: black;
+}
+.password-input-wrapper {
+  position: relative;
+}
+.password-input-wrapper span {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+}
+.small-button{
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+.buttons{
+  color: rgb(23, 23, 21);
+  font-size:15px;
+  background-color: rgb(34, 199, 199);
+  outline: none;
+  border-radius: 1px solid black !important;
+  width: 40%;
+  height: 40px;
+  margin-top: 1rem;
+}
+.go-homes{
+  background-color: rgb(34, 199, 199);
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+.go-homes .backs{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: Black;
+}
+.dat{
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 1px;
+  background-color: black;
+}
+.googles{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.googler{
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+.text-dark{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+}

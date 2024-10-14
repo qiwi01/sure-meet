@@ -112,6 +112,7 @@ const SignUp = () => {
     <>
       <div className="milly container-fluid pt-4">
         <div className="col-md-6 offset-md-3">
+          <div className="main">
           <div className="header-title text-center">
             <Link to="/" className="">
             </Link>
@@ -208,9 +209,7 @@ const SignUp = () => {
                   </span>
                 </div>
               </div>
-            </form>
-
-            <div className="hhh-milly my-2">
+              <div className="hhh-milly my-2">
               <input type="checkbox" />
               <p>
                 I agree to <span className="span-milly">Terms of service</span>{" "}
@@ -218,8 +217,8 @@ const SignUp = () => {
               </p>
             </div>
 
-            <div className="">
-            <button className={loading ? "btn btn-dark w-100 p-3 my-1" : "btn btn-outline-dark w-100 p-3 my-1" } onClick={handleSubmit} disabled={loading}>
+            <div className="small-button">
+            <button className= "buttones" onClick={handleSubmit} disabled={loading}>
               {loading ? (
                 <>
                   <span
@@ -233,27 +232,32 @@ const SignUp = () => {
               )}
             </button>
           </div>
-            <div className="dis my-2">
+            <div className="dart">
               <div className="line"></div>
               <span>&nbsp;&nbsp; or &nbsp;&nbsp;</span>
               <div className="line"></div>
             </div>
 
-            <div className="">
+            <div className="googles">
               <button className={!loading ? "btn btn-dark w-100 p-3 my-1" : "btn btn-outline-dark w-100 p-3 my-1" }>
                 <a className="text-light text-decoration-none" href="https://www.google.com/">Continue with Google</a>
               </button>
             </div>
             <div className="bb">
-              <p className="text-dark">
+              <p className="text-darks">
                 Already have an account? <Link to="/login">Sign in</Link>
               </p>
             </div>
-            <div className="go home">
-                <Link to="/">Go back</Link>
+            <div className="go-homes">
+                <Link to="/" className="backs">Go Back</Link>
             </div>
+            </form>
+
+            
           </div>
-        </div>
+
+          </div>
+                  </div>
         {/* <div className="right-side-milly">
           <img src={registerImg} className="image-fluid" />
         </div> */}

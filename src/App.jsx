@@ -5,6 +5,10 @@ import Login from './components/login/Login'
 import Home from './pages/Home'
 import SignUp from './components/register/Signup';
 import Profile from './components/Profile';
+import Dashboard from './pages/Dashboard';
+import Nearby from './components/Nearby';
+import Notification from './components/Notification';
+import Chats from './components/Chats';
 
 
 function App() {
@@ -29,6 +33,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp/>} />
           <Route path="/profile" element={<Profile/>} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/nearby" element={<Nearby/>} />
+          <Route path="/noti" element={<Notification/>} />
+          <Route path="/chats" element={<Chats/>} />
 
         </Routes>
         {/* <Footer/> */}

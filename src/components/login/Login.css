@@ -24,7 +24,8 @@
   margin-top: 3rem;
 }
 .form-dan{
-background-image: url(/src/images/sexy12.jpeg); 
+/* background-image: url(/src/images/sexy12.jpeg);  */
+background-color:beige;
   height: 60vh;
   width: 100%;
   margin-top: 1rem;
@@ -38,6 +39,11 @@ background-image: url(/src/images/sexy12.jpeg);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+}
+.form-action, .label{
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
 }
 .form-control{
   height:50px ;
@@ -148,5 +154,6 @@ background-image: url(/src/images/sexy12.jpeg);
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 2rem;
+  padding: 20px;
 }
 }

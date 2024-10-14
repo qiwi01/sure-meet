@@ -71,10 +71,10 @@ const Login = () => {
   };
 
   return (
-    <div className="dan-login container-fluid">
-      <div className="col-md-6 offset-md-3 pt-4">
+    <div className="dan-login">
+      <div className="">
         <div className="main">
-          <div className="header-title text-center">
+          <div className="header-title">
             {/* <Link to="/">
               <img className="ww " src={signinIcon} alt="" />
             </Link> */}

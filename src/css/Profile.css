@@ -1,0 +1,71 @@
+.main h3{
+    color: azure;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.profiles h2{
+    color: blue;
+    font-size: larger;
+}
+.hooker-profile{
+    /* margin-top: 20px; */
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image:url(../images/sure-10.webp); */
+    background-size: cover;
+}
+.hookes{
+    margin-top: 20px;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+
+}
+.hookes img {
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+}
+.hookes p{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(39, 25, 143);
+}
+.view-more{
+    width: 90px;
+    height: 50px;
+    background-color: rgba(210, 210, 223, 0.579);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.view-more .p{
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+}
+.colored-circle {
+    display: inline-block;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    background-color: green;
+    height: 15px;
+    width: 15px;
+  }

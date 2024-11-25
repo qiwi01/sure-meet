@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { toast } from "react-toastify";
-// import { FaRegEye } from "react-icons/fa";
-// import { FaRegEyeSlash } from "react-icons/fa";
-// import { useAuth } from "../contexts/Auth";
+import { useAuth } from "../contexts/authContext";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
-import { useLocation, Link } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 
 const Login = () => {
 
-    // const { userLoggedIn } = useAuth()
+  // const { userLoggedIn } = useAuth();
   // hooks/
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +26,7 @@ const Login = () => {
     setPassword(e.target.value);
   };
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()     
    try{
     await signInWithEmailAndPassword(auth, email, password)
     console.log("user logged in successfully");
@@ -47,31 +45,13 @@ const Login = () => {
     if (!password || pwdTrim.length < 6) {
       return toast.error("Enter a valid password");
     }
-    // try {
-    //   setLoading(true);
-    //   const data = await login(email, password);
-    //   setLoading(false);
+   
 
-    //   if (data) {
-    //     console.log(data);
-    //     toast.success("Login successful");
-    //     // navigate(
-    //     //   location.state ||
-    //     //     `/dashboard/${ isAdmin === 1 ? "admin" : "user"}`
-    //     // );
-    //   } else {
-    //     toast.error("Login failed. try again..");
-    //   }
-    // } catch (err) {
-    //   // console.log(err?.message);
-    //   const msg = err?.message;
-    //   toast.error(msg);
-    //   setLoading(false);
-    // }
   };
 
   return (
     <div className="dan-login">
+      {/* {userLoggedIn && (<Navigate to={"/profile"} replace={true}/>)} */}
       <div className="">
         <div className="main">
           <div className="header-title">

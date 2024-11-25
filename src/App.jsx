@@ -9,6 +9,11 @@ import Dashboard from './pages/Dashboard';
 import Nearby from './components/Nearby';
 import Notification from './components/Notification';
 import Chats from './components/Chats';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Premium from './components/Premium';
+
+
 
 
 function App() {
@@ -21,7 +26,7 @@ function App() {
 <Router>
         {/* <Breadcrumbs/>   */}
         {/* <ScrollToTop /> */}
-        {/* <ToastContainer /> */}
+        <ToastContainer />
         <Routes>
           {/* <Route element={<Menu />}> 
           
@@ -36,7 +41,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/nearby" element={<Nearby/>} />
-          <Route path="/noti" element={<Notification/>} />
+          <Route path="/premium" element={<Premium/>} />
           <Route path="/chats" element={<Chats/>} />
 
         </Routes>

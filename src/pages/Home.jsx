@@ -21,8 +21,8 @@ const Home = () => {
     : */}
     {/* <> */}
     <Header/>
-   <Review/>
-   <Contact/> 
+   {/* <Review/> */}
+   {/* <Contact/>  */}
    </>
     // }
     // </>

@@ -10,9 +10,9 @@ export function useAuth() {
 }
 
 export function AuthProvider ({children}) {
-    const[currentUser, setCurrrentUser] = useState(null)
-    const[userLoggedIn, setUserLoggedIn] = useState(false)
-    const[loading, setLoading] = useState(true) 
+    const[currentUser, setCurrrentUser] = useState(null);
+    const[userLoggedIn, setUserLoggedIn] = useState(false);
+    const[loading, setLoading] = useState(true); 
 
  
 useEffect(()=>{
@@ -36,9 +36,11 @@ const value = {
     userLoggedIn,
     loading,
 }
+
 return(
     <AuthContext.Provider value={value}>
         { !loading && children}
     </AuthContext.Provider>
 )
+
 }

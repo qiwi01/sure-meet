@@ -3,7 +3,7 @@ import "./Signup.css"
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { auth, db } from "../firebase/firebase";
+import { auth } from "../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 // import { setDoc, doc } from "firebase/firestore";
@@ -14,7 +14,6 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
-  const [age, setAge] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -31,9 +30,9 @@ const SignUp = () => {
   const handleAddressChange = (e) => {
     setAddress(e.target.value);
   };
-  const handleAgeChange = (e) => {
-    setAge(e.target.value);
-  };
+  // const handleAgeChange = (e) => {
+  //   setAge(e.target.value);
+  // };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -42,38 +41,38 @@ const SignUp = () => {
   const handleConfirmPasswordChange = (e) => {
     setConfirmPassword(e.target.value);
   };
-  const handleSubmit = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     try{
       await createUserWithEmailAndPassword(auth, email, password)
-      const user=auth.currentuser 
+      const user=auth.currentUser 
       console.log(user);
-      // if (user){
-      //   await setDoc(doc(db, "users", user.uid), {
-      //     name,
-      //     email,
-      //     address,
-      //     age,
-      //     createdAt: new Date(),
-      //   });
-      //   toast.success("User registered successfully");
-      //   setName("");
-      //   setEmail("");
-      //   setPassword("");
-      //   setAddress("");
-      //   setAge("");
-      //   setConfirmPassword("");
-      //   setShowPassword(false);
-      //   setShowConfirmPassword(false);
-      //   setLoading(false);
-      // }
+      if (user){
+        await setDoc(doc(db, "users", user.uid), {
+          name,
+          email,
+          address,
+          age,
+          createdAt: new Date(),
+        });
+        toast.success("User registered successfully");
+        setName("");
+        setEmail("");
+        setPassword("");
+        setAddress("");
+        // setAge("");
+        setConfirmPassword("");
+        setShowPassword(false);
+        setShowConfirmPassword(false);
+        setLoading(false);
+      }
       console.log("user is registered successfully");
       toast.success("User registered", {position: "top-center"})
     } catch (error) {}
 
 
 
-    if (!name || !email || !password ||!age || !address) {
+    if (!name || !email || !password || !address) {
       console.log("enter all fields....");
       return toast.error("Enter all fields");
     }
@@ -88,7 +87,7 @@ const SignUp = () => {
     try {
       // sending form data to server
       setLoading(true);
-      const data = await Signup(name, email, address, age, password);
+      const data = await Signup(name, email, address, password);
 
       // check for successful registration
       if (!data?.error) {
@@ -125,7 +124,7 @@ const SignUp = () => {
             <p>Let's get started by filling the information below:</p>
           </div> */}
           <div className="">
-            <form className="form-milly" onSubmit={handleSubmit}>
+            <form className="form-milly" onSubmit={handleRegister}>
               <div className="form-action">
                 <label>Full Name</label>
                 <input
@@ -218,7 +217,7 @@ const SignUp = () => {
             </div>
 
             <div className="small-button">
-            <button className= "buttones" onClick={handleSubmit} disabled={loading}>
+            <button className= "buttones" onClick={handleRegister} disabled={loading}>
               {loading ? (
                 <>
                   <span

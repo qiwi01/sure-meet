@@ -6,6 +6,8 @@ import sandra from "../images/sure-11.jpg"
 import maureen from "../images/sure-12.jpg"
 import anita from "../images/sure-13.jpg"
 import lina from "../images/sure-14.jpg"
+import cashapp from "../images/cashapp1.svg"
+// import crypto from "../images/bitcoin1.svg"
 import { Navigate, Link } from "react-router-dom";
 
 
@@ -18,6 +20,19 @@ function Profile() {
   //   });
 
   //   useEffect(() => {fetchUserData ()}, []);
+
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  if(modal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
+
 
   return (
     <div className="main">
@@ -65,12 +80,41 @@ function Profile() {
           
         </div>
       </div>
+
+
       <div className="view-more">
-        <p>
-        <Link to="/premium">View-more</Link>
-        </p>
+      <button className='btn-help'>
+        <a href="/help"> Help?</a>
+      </button>
+      <button onClick={toggleModal} className="btn-modal">
+        View More
+      </button>
       </div>
+      {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+            <div className='pre-word'>
+              <h2>Subscribe for a one-time payment to premium below to see hot ladies around you and have fun with them.</h2>
+              <p>Pay into any of the payment channels below</p></div>
+              <div className="pre-btn">
+              <button className='btn-card'>
+        <a href="/card"> GIFT CARDS</a>
+      </button>
+      <p>OR</p>
+      <button className='btn-cashapp'>
+        <a href="/cashapp"> CASHAPP </a>
+      </button>
+              </div>
+        
+            <button className="close-modal" onClick={toggleModal}>
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
     </div>
+    
 //     <div className="premium-main">
 //       <div className="ladies">
 

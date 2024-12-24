@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Authnav from './Authnav'
+// import Review from './Review'
 
 const Header = () => {
 
@@ -24,6 +24,9 @@ const Header = () => {
     <Link to="/Login">
         <button className="log-button">LOG IN</button>
     </Link>
+    </div>
+    <div className="review-main">
+      {/* <Review/> */}
     </div>
   </div>
   

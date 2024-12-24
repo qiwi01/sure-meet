@@ -1,0 +1,18 @@
+.card-top{
+    padding: 10px 10px;
+    font-size: 24px;
+    color: red;
+    background-color: white;
+    height: 90px;
+}
+.go-homes{
+    background-color: rgb(34, 199, 199);
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30rem;
+    margin-left: 17rem;
+  }

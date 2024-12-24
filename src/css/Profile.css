@@ -1,4 +1,5 @@
-.main h3{
+@media (max-width: 767px) {
+    .main h3{
     color: azure;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -43,21 +44,20 @@
     color: rgb(39, 25, 143);
 }
 .view-more{
-    width: 90px;
+    width: 100%;
     height: 50px;
-    background-color: rgba(210, 210, 223, 0.579);
     display: flex;
-    align-self: center;
-    justify-content: center;
+    /* align-self: center; */
+    justify-content: space-between;
+    margin-top: 4rem;
 }
-.view-more .p{
-    font-size: 30px;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    color: white;
+.btn-help{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    color: #007bff;
+    font-size: 18px;
 }
 .colored-circle {
     display: inline-block;
@@ -69,3 +69,110 @@
     height: 15px;
     width: 15px;
   }
+.premium h2{
+    /* margin-top: 5vh; */
+    color: rgb(9, 128, 232);
+    font-size: 20px;
+    /* font-style: oblique; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.crypto{
+    display: flex;
+    /* margin-top: 2rem; */
+    /* justify-content: center; */
+    width: 100vh;
+}
+.crypto b{
+    display: inline-block;
+}
+.zero-button{
+    background-color: none !important;
+}
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    background-color: red;
+    color: white;
+}
+.pre-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.pre-word{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pre-word h2{
+    font-size: 18px;
+    color: rgb(136, 14, 14);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-cashapp{
+    width: 70%;
+    height: 40px;
+    background-color: #1ec376;
+    color: white !important;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center ;
+}
+
+.btn-card{
+    width: 70%;
+    height: 40px;
+    background-color: #1ec376;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+}

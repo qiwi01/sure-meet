@@ -30,9 +30,6 @@ const SignUp = () => {
   const handleAddressChange = (e) => {
     setAddress(e.target.value);
   };
-  // const handleAgeChange = (e) => {
-  //   setAge(e.target.value);
-  // };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -43,34 +40,6 @@ const SignUp = () => {
   };
   const handleRegister = async (e) => {
     e.preventDefault();
-    try{
-      await createUserWithEmailAndPassword(auth, email, password)
-      const user=auth.currentUser 
-      console.log(user);
-      if (user){
-        await setDoc(doc(db, "users", user.uid), {
-          name,
-          email,
-          address,
-          age,
-          createdAt: new Date(),
-        });
-        toast.success("User registered successfully");
-        setName("");
-        setEmail("");
-        setPassword("");
-        setAddress("");
-        // setAge("");
-        setConfirmPassword("");
-        setShowPassword(false);
-        setShowConfirmPassword(false);
-        setLoading(false);
-      }
-      console.log("user is registered successfully");
-      toast.success("User registered", {position: "top-center"})
-    } catch (error) {}
-
-
 
     if (!name || !email || !password || !address) {
       console.log("enter all fields....");
@@ -84,27 +53,24 @@ const SignUp = () => {
     if (!password || pwdTrim.length < 6) {
       return toast.error("Enter a valid password");
     }
-    try {
-      // sending form data to server
-      setLoading(true);
-      const data = await Signup(name, email, address, password);
-
-      // check for successful registration
-      if (!data?.error) {
-        toast.success("Registration successful");
-        setLoading(false);
-        setTimeout(() => {
-          navigate("/");
-        }, 5000);
-      } else {
-        toast.error("Registration failed");
-      }
-    } catch (err) {
-      console.log(err);
-      const { error } = err?.response?.data;
-      toast.error(error);
-      setLoading(false);
+    if (password!== confirmPassword) {
+      return toast.error("Passwords do not match");
     }
+    setLoading(true);
+    try{
+      await createUserWithEmailAndPassword(auth, email, password);
+      toast.success("Registration Successful!");
+      setLoading(false);
+      setName("");
+      setEmail("");
+      setPassword("");
+      setAddress("");
+      setConfirmPassword("");
+    }
+    catch(error){
+          toast.error(error.message);
+          setLoading(false);
+        }
   };
 
   return (

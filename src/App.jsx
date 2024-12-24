@@ -12,6 +12,11 @@ import Chats from './components/Chats';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Premium from './components/Premium';
+import Help from './components/Help';
+import Cashapp from './components/Cashapp';
+import Card from './components/Card';
+// import Review from './components/Review';
+// import Modal from './components/modal/Modal';
 
 
 
@@ -40,9 +45,13 @@ function App() {
           <Route path="/profile" element={<Profile/>} />
           <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="*" element={<NotFound />} /> */}
-          <Route path="/nearby" element={<Nearby/>} />
+          {/* <Route path="/modal" element={<Modal/>} /> */}
           <Route path="/premium" element={<Premium/>} />
           <Route path="/chats" element={<Chats/>} />
+          <Route path="/help" element={<Help/>} />
+          <Route path="/cashapp" element={<Cashapp/>} />
+          <Route path="/card" element={<Card/>} />
+          {/* <Route path="/review" element={<Review/>} /> */}
 
         </Routes>
         {/* <Footer/> */}

@@ -1,0 +1,31 @@
+.marquee-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    /* background-color: rgb(18, 122, 212); */
+    color: #da0d0d;
+  }
+  
+.marquee-below {
+    width: 100%; /* Adjust width as needed, make sure it's wide enough for the longest message */
+    overflow: hidden;
+    position: relative;
+    background-color: aliceblue; /* Black background for contrast */
+    opacity: 0.5;
+    
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.marquee-below p {
+    display: inline-block;
+    align-items: center;
+    font-size: 22px;
+    /* padding-left: 100%; Start off-screen */
+    /* animation: scroll 10s linear infinite; Animation properties */
+}
+  
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }

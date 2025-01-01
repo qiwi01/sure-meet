@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/Cashapp.css"
 import { Link } from 'react-router-dom'
+import ScrollingMsg from './ScrollingMsg'
 const Cashapp = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Cashapp = () => {
       <div className="go-homes">
             <Link to="/profile" className="backs">Go Back</Link>
         </div>
+        <ScrollingMsg/>
     </div>
   )
 }

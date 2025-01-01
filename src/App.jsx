@@ -15,6 +15,9 @@ import Premium from './components/Premium';
 import Help from './components/Help';
 import Cashapp from './components/Cashapp';
 import Card from './components/Card';
+import Marquee from './components/Marquee';
+import ScrollingMsg from './components/ScrollingMsg';
+import ReviewsList from './components/Review';
 // import Review from './components/Review';
 // import Modal from './components/modal/Modal';
 
@@ -51,6 +54,9 @@ function App() {
           <Route path="/help" element={<Help/>} />
           <Route path="/cashapp" element={<Cashapp/>} />
           <Route path="/card" element={<Card/>} />
+          <Route path="/review" element={<ReviewsList/>} />
+          <Route path="/marquee" element={<Marquee/>} />
+          <Route path="/scrolling" element={<ScrollingMsg/>} />
           {/* <Route path="/review" element={<Review/>} /> */}
 
         </Routes>

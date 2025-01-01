@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ReviewsList from './Review'
+import "../css/Header.css"
 // import Review from './Review'
 
 const Header = () => {
@@ -25,10 +27,11 @@ const Header = () => {
         <button className="log-button">LOG IN</button>
     </Link>
     </div>
-    <div className="review-main">
-      {/* <Review/> */}
-    </div>
+   
   </div>
+  <div className="review-main">
+      <ReviewsList/>
+    </div>
   
     {/* <Authnav/> */}
     </div>

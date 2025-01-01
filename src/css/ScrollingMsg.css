@@ -1,0 +1,23 @@
+.scrolling-container {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    background-color: aqua;
+  }
+  .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollText 5s linear infinite;
+    font-size: 26px;
+    color: white;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

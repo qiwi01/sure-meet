@@ -27,7 +27,7 @@
     background-size: cover;
 }
 .hookes{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
     height: 60vh;
     display: flex;
@@ -36,12 +36,15 @@
     align-items: center;
     text-align: center;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 20%;
 
 }
 .hookes img {
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 80%;
-    height: 40vh;
+    height: 35vh;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
 }

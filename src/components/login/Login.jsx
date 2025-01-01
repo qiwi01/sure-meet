@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { useAuth } from "../contexts/authContext";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
-import { Navigate, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 
@@ -18,6 +18,8 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const navigate = useNavigate()
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -29,9 +31,9 @@ const Login = () => {
     e.preventDefault()     
    try{
     await signInWithEmailAndPassword(auth, email, password)
-    console.log("user logged in successfully");
-    window.location.href="/profile"
+    // console.log("user logged in successfully");
     toast.success("User logged in", {position: "top-center"}) 
+    navigate('/profile')
    }catch (error){}
 
     if (!email || !password) {

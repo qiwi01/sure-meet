@@ -177,11 +177,11 @@ function Profile() {
               <p>Pay into any of the payment channels below</p></div>
               <div className="pre-btn">
               <button className='btn-card'>
-        <a href="/card"> GIFT CARDS</a>
+        <a href="/card"> GIFT-CARDS</a>
       </button>
       <p>OR</p>
       <button className='btn-cashapp'>
-        <a href="/cashapp"> CASHAPP </a>
+        <a href="/cashapp"> PAYMENT-APPS </a>
       </button>
               </div>
         

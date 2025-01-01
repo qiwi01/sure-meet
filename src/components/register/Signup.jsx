@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { auth } from "../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 // import { setDoc, doc } from "firebase/firestore";
 
 const SignUp = () => {
@@ -18,6 +19,8 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
 
   const handleNameChange = (e) => {
@@ -60,6 +63,7 @@ const SignUp = () => {
     try{
       await createUserWithEmailAndPassword(auth, email, password);
       toast.success("Registration Successful!");
+      navigate('/login');
       setLoading(false);
       setName("");
       setEmail("");

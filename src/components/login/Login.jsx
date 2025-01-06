@@ -34,7 +34,9 @@ const Login = () => {
     // console.log("user logged in successfully");
     toast.success("User logged in", {position: "top-center"}) 
     navigate('/profile')
-   }catch (error){}
+   }catch (error){
+    toast.error("wrong email address or password", {position: "top-center"})
+   }
 
     if (!email || !password) {
       return toast.error("Enter all fields");
@@ -134,7 +136,7 @@ const Login = () => {
           <div className="googles">
               <button className={!loading ? "btn btn-dark w-100 p-3 my-1" : "btn btn-outline-dark w-100 p-3 my-1" }>
                 {/* <img className="pic mx-2"  alt="" /> */}
-                <a className="googler" href="https://www.google.com/">Continue with Google</a>
+                <a className="googler" href="">Continue with Google</a>
               </button>
             </div>
           <div className="dd">

@@ -38,7 +38,7 @@ const ReviewsList = () => {
       id: 2,
       username: "TinaLopez",
       rating: 3,
-      text: "The app is okay, but the quality of matches could be better."
+      text: "The app is okay, the quality of matches are great, i just need more ladies close to me."
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const ReviewsList = () => {
       id: 4,
       username: "NicoleAdams",
       rating: 2,
-      text: "Too many bots, makes it hard to trust the platform."
+      text: "very easy to trust the platform."
     },
     {
       id: 5,
@@ -74,7 +74,7 @@ const ReviewsList = () => {
       id: 8,
       username: "EllaWhite",
       rating: 1,
-      text: "Disappointing, mostly fake profiles and dead ends."
+      text: "i was shocked, when the girl showed up, real people on here, although its quite expensive."
     }
   ]);
   const [showAll, setShowAll] = useState(false); // State to toggle showing all reviews

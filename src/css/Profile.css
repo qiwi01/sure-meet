@@ -18,7 +18,7 @@
 .hooker-profile{
     /* margin-top: 20px; */
     width: 100%;
-    height: 250vh;
+    height: 420vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +38,11 @@
     background-color: white;
     border-radius: 20%;
 
+}
+.hookes h2{
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
 }
 .hookes img {
     margin-top: 10px;

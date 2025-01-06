@@ -19,12 +19,16 @@ const ChatComponent = () => {
       setTimeout(() => {
         const responses = [
           "Hello! What are you looking for?",
-          "Sounds interesting! What do you do for fun?",
+          "What do you do for fun?",
           "Are we doing this at my place or yours?",
+          "you can call me when you pay for premium",
           "I like meeting new people. How about you?",
           "i am very very freaky. Are you?",
           "I like giving blowjobs",
-          "Raw or Condoms?"
+          "Raw or Condoms?",
+          "where do you live?",
+          "can you host?"
+
         ];
         const randomResponse = responses[Math.floor(Math.random() * responses.length)];
         setMessages(prevMessages => {
@@ -39,7 +43,7 @@ const ChatComponent = () => {
           });
           return newMessages;
         });
-      }, 1000);
+      }, 3000);
     }
   };
 

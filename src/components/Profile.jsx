@@ -2,10 +2,13 @@ import React, {useEffect, useState} from 'react'
 // import { useAuth } from './contexts/authContext';
 import { auth } from './firebase/firebase';
 import "../css/Profile.css"
-import sandra from "../images/sure-11.jpg"
+import allison from "../images/sure-11.jpg"
 import maureen from "../images/sure-12.jpg"
 import anita from "../images/sure-13.jpg"
 import lina from "../images/sure-14.jpg"
+import kate from"../images/EX8HbrOWoAY-3bV.jpg"
+import sandra from "../images/Fo-Y6BmXEAE1Ecz.jpeg"
+import diasy from "../images/CTEolmXk_400x400.jpg"
 import { Navigate, Link } from "react-router-dom";
 import Marquee from './Marquee';
 
@@ -73,13 +76,94 @@ function Profile() {
           </div>
 
           
+        </div> <div className="hookes">
+          <h2>
+            <div className="colored-circle"></div>Allison</h2>
+          <img src={allison} alt="" />
+          <p>I am cheaper and way better than the rest</p>
+          <b> 54 miles away</b>
+          <div className="">
+          <Link to="/chats" className="backs">
+          <svg 
+      width="45" 
+      height="45" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+      <circle cx="8" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="12.5" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="17" cy="12" r="2" fill="currentColor" stroke="none" />
+    </svg>
+          </Link>
+          </div>
+
+          
+        </div> <div className="hookes">
+          <h2>
+            <div className="colored-circle"></div>Diasy</h2>
+          <img src={diasy} alt="" />
+          <p>You can`t text me before paying for premium. i want serious men</p>
+          <b> 25 miles away</b>
+          <div className="">
+          <Link to="" className="backs">
+          <svg 
+      width="45" 
+      height="45" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+      <circle cx="8" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="12.5" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="17" cy="12" r="2" fill="currentColor" stroke="none" />
+    </svg>
+          </Link>
+          </div>
+
+          
+        </div> <div className="hookes">
+          <h2>
+            <div className="colored-circle"></div>Kate</h2>
+          <img src={kate} alt="" />
+          <p>i am actually more interested in a relationship, than hooking up</p>
+          <b> 40 miles away</b>
+          <div className="">
+          <Link to="/chats" className="backs">
+          <svg 
+      width="45" 
+      height="45" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+      <circle cx="8" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="12.5" cy="12" r="2" fill="currentColor" stroke="none" />
+      <circle cx="17" cy="12" r="2" fill="currentColor" stroke="none" />
+    </svg>
+          </Link>
+          </div>
+
+          
         </div>
         <div className="hookes">
           <h2>
             <div className="colored-circle"></div>Lina</h2>
           <img src={lina} alt="" />
           <p>i live alone and i have a car, so im down for mine or yours</p>
-          <b> 40 miles away</b>
+          <b> 19 miles away</b>
           <div className="">
           <Link to="/chats" className="backs">
           <svg 
@@ -133,8 +217,8 @@ function Profile() {
           <h2>
             <div className="colored-circle"></div>Anita</h2>
           <img src={anita} alt="hookes" />
-          <p>i am looking for a partner, i just need one regular person</p>
-          <b> 12 miles away</b>
+          <p>i am looking for a sex partner, i just need one regular person</p>
+          <b> 13 miles away</b>
           <div className="">
           <Link to="/chats" className="backs">
           <svg 
@@ -181,7 +265,7 @@ function Profile() {
       </button>
       <p>OR</p>
       <button className='btn-cashapp'>
-        <a href="/cashapp"> PAYMENT-APPS </a>
+        <a href="/cashapp"> PAYMENT APPS </a>
       </button>
               </div>
         

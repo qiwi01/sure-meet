@@ -7,11 +7,13 @@
   .reviews-container h2 {
     margin-bottom: 20px;
     margin-top: 2rem;
+    background-color: #f0f0f0;
     color: #007BFF;
     align-items: center;
     align-self: center;
+    padding: 5px;
     display: flex;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   .reviews-list {
@@ -26,7 +28,7 @@
   .review-box {
     background-color: #f0f0f0;
     border-radius: 5px;
-    /* padding: 15px; */
+    padding: 15px;
     margin-bottom: 15px; /* Space between reviews */
     width: 80%; /* Full width of the container */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);

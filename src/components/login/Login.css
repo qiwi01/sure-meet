@@ -1,7 +1,6 @@
 @media (max-width: 767px) {
   body{
   background-image: url(/src/images/sexy11.jpeg);
-
  }
 .dan-login{
   
@@ -30,6 +29,8 @@ background-color:beige;
   width: 100%;
   margin-top: 1rem;
   border-radius: 5%;
+  overflow-y: auto;
+
 }
 .form-action{
   display: flex;
@@ -112,8 +113,11 @@ background-color:beige;
   width: 100px;
   height: 40px;
   border-radius: 5px;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  justify-self: last baseline;
   margin-left: 15rem;
+  bottom: 0;
+  position: fixed;
 }
 .go-homes .backs{
   text-decoration: none;

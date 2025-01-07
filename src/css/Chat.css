@@ -1,6 +1,6 @@
 .chat-container {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -18,8 +18,10 @@
   }
   
 .message {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 10px 15px;
     margin: 5px 0;
     border-radius: 15px;
@@ -29,11 +31,12 @@
   
 .ai-user {
     background-color: #007BFF;
-    display: flex;
-    align-self: flex-start;
+    display: block;
+    justify-self: flex-end;
     color: white;
+    margin-left: 30px;
     border-top-left-radius: 0;
-    width: 70%;
+    /* width: 70%; */
   }
   
 .ai-user::after {
@@ -48,10 +51,10 @@
 .real-lady {
     background-color: #DCF8C6;
     color: black;
-    display: flex;
-    align-items: flex-end !important;
+    display: block;
+    justify-self: flex-start;
     border-top-right-radius: 0;
-    width: 70%;
+    /* width: 70%; */
     margin-left: 20%;
   }
   
@@ -70,6 +73,7 @@
     background-color: white;
     width: 95%;
     height: 50px;
+    overflow-y: auto; 
   }
   
 input[type="text"] {
@@ -91,4 +95,16 @@ input[type="text"] {
   
 .chat-btn:hover {
     background-color: #0056b3;
+  }
+  .ai-typing-indicator {
+    font-style: italic;
+    color: white; /* A muted grey color */
+    font-size: 20px; /* Slightly smaller text size */
+    margin-top: 5px; /* Add some space above */
+    text-align: left; /* Align to left if your messages are left-aligned */
+  }
+  .read-indicator {
+    font-size: 0.8em;
+    color: #4CAF50;
+    text-align: right; /* Green color for read status */
   }

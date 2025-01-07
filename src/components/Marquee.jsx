@@ -4,7 +4,7 @@ import { FaVolumeUp } from 'react-icons/fa';
 
 const messages = [
   "David just hooked up with Bellory",
-  "charles wellington just paid for premium.",
+  "charles  just paid for premium.",
   "Mr anonymous just paid for premium",
   "Taylor just booked Anita for 3 nights ",
   "Joe just hooked up with Maria",

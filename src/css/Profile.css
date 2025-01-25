@@ -44,6 +44,11 @@
     color: black;
     margin-top: 10px;
 }
+.hookes h2 span{
+  color: gold;
+  text-decoration-line: overline;
+  font-size: 16px;
+}
 .hookes img {
     margin-top: 10px;
     margin-bottom: 10px;

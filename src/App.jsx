@@ -13,12 +13,12 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Premium from './components/Premium';
 import Help from './components/Help';
-import Cashapp from './components/Cashapp';
 import Card from './components/Card';
 import Marquee from './components/Marquee';
 import ScrollingMsg from './components/ScrollingMsg';
 import ReviewsList from './components/Review';
 import ChatAI from './components/ChatAi';
+import PayApps from './components/PayApps';
 // import Review from './components/Review';
 // import Modal from './components/modal/Modal';
 
@@ -53,7 +53,7 @@ function App() {
           <Route path="/premium" element={<Premium/>} />
           <Route path="/chats" element={<Chats/>} />
           <Route path="/help" element={<Help/>} />
-          <Route path="/cashapp" element={<Cashapp/>} />
+          <Route path="/payapps" element={<PayApps/>} />
           <Route path="/card" element={<Card/>} />
           <Route path="/chatai" element={<ChatAI/>} />
           <Route path="/review" element={<ReviewsList/>} />

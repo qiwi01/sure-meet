@@ -1,0 +1,78 @@
+.cashapp-top{
+    padding: 10px 10px;
+    font-size: 24px;
+    color: red;
+    background-color: white;
+    height: 60px;
+}
+.cashapp-bottom{
+    padding: 10px 10px;
+    font-size: 24px;
+    color: red;
+    background-color: white;
+    height: 120px;
+    margin-top: 1rem;
+}
+.go-homes{
+    background-color: rgb(34, 199, 199);
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30rem;
+    margin-left: 17rem;
+  }
+  .contact-links a{
+    display: flex;
+    justify-content: space-between;
+  }
+  .payment-options {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 250px; /* Adjust based on your design needs */
+    text-align: left;
+  }
+  
+  .arrow {
+    float: right;
+  }
+  
+  .dropdown-list {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .payment-logo {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 10px;
+  }
+  

@@ -49,7 +49,7 @@ const ReviewsList = () => {
     {
       id: 4,
       username: "NicoleAdams",
-      rating: 2,
+      rating: 5,
       text: "very easy to trust the platform."
     },
     {
@@ -73,7 +73,7 @@ const ReviewsList = () => {
     {
       id: 8,
       username: "EllaWhite",
-      rating: 1,
+      rating: 4,
       text: "i was shocked, when the girl showed up, real people on here, although its quite expensive."
     }
   ]);

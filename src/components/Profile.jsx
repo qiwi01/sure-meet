@@ -2,12 +2,12 @@ import React, {useEffect, useState} from 'react'
 // import { useAuth } from './contexts/authContext';
 import { auth } from './firebase/firebase';
 import "../css/Profile.css"
-import allison from "../images/sure-11.jpg"
-import maureen from "../images/sure-12.jpg"
+import belle from "../images/sure-11.jpg"
+import maureen from "../images/photo_2025-01-25 00.52.51.jpeg"
 import anita from "../images/sure-13.jpg"
-import lina from "../images/sure-14.jpg"
+import riley from "../images/Bunny12-e1613081321129.webp"
 import kate from"../images/EX8HbrOWoAY-3bV.jpg"
-import sandra from "../images/Fo-Y6BmXEAE1Ecz.jpeg"
+import alina from "../images/photo_2025-01-25 00.58.23.jpeg"
 import diasy from "../images/CTEolmXk_400x400.jpg"
 import { Navigate, Link } from "react-router-dom";
 import Marquee from './Marquee';
@@ -51,8 +51,8 @@ function Profile() {
       <div className="hooker-profile">
       <div className="hookes">
           <h2>
-            <div className="colored-circle"></div>Sandra</h2>
-          <img src={sandra} alt="" />
+            <div className="colored-circle"></div>Kate</h2>
+          <img src={kate} alt="" />
           <p>Available to fuck</p>
           <b> 3 miles away</b>
           <div className="">
@@ -78,8 +78,8 @@ function Profile() {
           
         </div> <div className="hookes">
           <h2>
-            <div className="colored-circle"></div>Allison</h2>
-          <img src={allison} alt="" />
+            <div className="colored-circle"></div>Belle</h2>
+          <img src={belle} alt="" />
           <p>I am cheaper and way better than the rest</p>
           <b> 54 miles away</b>
           <div className="">
@@ -105,7 +105,7 @@ function Profile() {
           
         </div> <div className="hookes">
           <h2>
-            <div className="colored-circle"></div>Diasy</h2>
+            <div className="colored-circle"></div>Diasy <span> VIP </span></h2>
           <img src={diasy} alt="" />
           <p>You can`t text me before paying for premium. i want serious men</p>
           <b> 25 miles away</b>
@@ -132,9 +132,9 @@ function Profile() {
           
         </div> <div className="hookes">
           <h2>
-            <div className="colored-circle"></div>Kate</h2>
-          <img src={kate} alt="" />
-          <p>i am actually more interested in a relationship, than hooking up</p>
+            <div className="colored-circle"></div>Alina</h2>
+          <img src={alina} alt="" />
+          <p> i suck, fuck and i am down for all form of fetish</p>
           <b> 40 miles away</b>
           <div className="">
           <Link to="/chats" className="backs">
@@ -160,8 +160,8 @@ function Profile() {
         </div>
         <div className="hookes">
           <h2>
-            <div className="colored-circle"></div>Lina</h2>
-          <img src={lina} alt="" />
+            <div className="colored-circle"></div>Riley</h2>
+          <img src={riley} alt="" />
           <p>i live alone and i have a car, so im down for mine or yours</p>
           <b> 19 miles away</b>
           <div className="">
@@ -189,7 +189,7 @@ function Profile() {
           <h2>
             <div className="colored-circle"></div>Maureen</h2>
           <img src={maureen} alt="" />
-          <p>i suck, fuck and i am down for all form of fetish</p>
+          <p> i am actually more interested in a relationship, than hooking up</p>
           <b> 20 miles away</b>
           <div className="">
           <Link to="/chats" className="backs">
@@ -265,7 +265,7 @@ function Profile() {
       </button>
       <p>OR</p>
       <button className='btn-cashapp'>
-        <a href="/cashapp"> PAYMENT APPS </a>
+        <a href="/payApps"> PAYMENT APPS </a>
       </button>
               </div>
         

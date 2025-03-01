@@ -19,6 +19,7 @@ import ScrollingMsg from './components/ScrollingMsg';
 import ReviewsList from './components/Review';
 import ChatAI from './components/ChatAi';
 import PayApps from './components/PayApps';
+import Crypto from './components/Crypto';
 // import Review from './components/Review';
 // import Modal from './components/modal/Modal';
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/help" element={<Help/>} />
           <Route path="/payapps" element={<PayApps/>} />
           <Route path="/card" element={<Card/>} />
+          <Route path="/crypto" element={<Crypto/>} />
           <Route path="/chatai" element={<ChatAI/>} />
           <Route path="/review" element={<ReviewsList/>} />
           <Route path="/marquee" element={<Marquee/>} />

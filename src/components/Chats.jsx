@@ -73,7 +73,7 @@ const ChatComponent = () => {
               const newCount = prevCount + 1;
               if (newCount === 5) {
                 // Redirect after the fifth reply
-                navigate('/card'); // Replace with your desired path
+                navigate('/crypto'); // Replace with your desired path
               }
               return newCount;
             });

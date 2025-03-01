@@ -263,9 +263,11 @@ function Profile() {
               <button className='btn-card'>
         <a href="/card"> GIFT-CARDS</a>
       </button>
-      <p>OR</p>
       <button className='btn-cashapp'>
         <a href="/payApps"> PAYMENT APPS </a>
+      </button> 
+      <button className='btn-crypto'>
+        <a href="/crypto"> CRYPTO </a>
       </button>
               </div>
         
